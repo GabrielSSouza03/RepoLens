@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Builds / frameworks
+dist/
+build/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# Env / secrets (keep examples)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+credentials.json
+service-account*.json
+
+# Logs / tests / coverage
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+.nyc_output/
+tmp/
+temp/
+*.tmp
+
+# App data / local clones
+data/
+repos/
+
+# OS / editors / agents
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.claude/
+.cursor/
+*.swp
+*.swo
+
+# Vercel / misc
+.vercel/
+.cache/

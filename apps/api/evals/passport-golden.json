@@ -1,0 +1,122 @@
+[
+  {
+    "id": "auth-entry",
+    "question": "onde é feita a autenticação?",
+    "expectPaths": ["lib/middleware/authenticate.js"],
+    "expectAbstain": false
+  },
+  {
+    "id": "auth-strategy",
+    "question": "como strategies são registradas?",
+    "expectPaths": ["lib/authenticator.js", "lib"],
+    "expectAbstain": false
+  },
+  {
+    "id": "session-serialize",
+    "question": "onde o usuário é serializado na sessão?",
+    "expectPaths": ["lib"],
+    "expectAbstain": false
+  },
+  {
+    "id": "http-bearer",
+    "question": "existe suporte a HTTP Bearer?",
+    "expectPaths": [],
+    "expectAbstain": false
+  },
+  {
+    "id": "impossible-billing",
+    "question": "onde fica a integração com Stripe billing e invoices?",
+    "expectPaths": [],
+    "expectAbstain": true
+  },
+  {
+    "id": "impossible-kubernetes",
+    "question": "qual o manifesto Kubernetes de deploy deste repo?",
+    "expectPaths": [],
+    "expectAbstain": true
+  },
+  {
+    "id": "exports-main",
+    "question": "qual o entrypoint principal exportado pelo package?",
+    "expectPaths": ["lib", "package.json"],
+    "expectAbstain": false
+  },
+  {
+    "id": "failure-flash",
+    "question": "como mensagens de falha de login (flash) são tratadas?",
+    "expectPaths": ["lib"],
+    "expectAbstain": false
+  },
+  {
+    "id": "req-login",
+    "question": "onde req.login é definido ou anexado?",
+    "expectPaths": ["lib"],
+    "expectAbstain": false
+  },
+  {
+    "id": "impossible-graphql",
+    "question": "onde está o schema GraphQL e os resolvers?",
+    "expectPaths": [],
+    "expectAbstain": true
+  },
+  {
+    "id": "initialize-middleware",
+    "question": "o que faz o middleware initialize do passport?",
+    "expectPaths": ["lib"],
+    "expectAbstain": false
+  },
+  {
+    "id": "strategy-error",
+    "question": "como erros de strategy são propagados?",
+    "expectPaths": ["lib"],
+    "expectAbstain": false
+  },
+  {
+    "id": "impossible-wasm",
+    "question": "onde o módulo WASM de crypto é carregado?",
+    "expectPaths": [],
+    "expectAbstain": true
+  },
+  {
+    "id": "session-strategy",
+    "question": "existe uma SessionStrategy? onde?",
+    "expectPaths": ["lib"],
+    "expectAbstain": false
+  },
+  {
+    "id": "framework-connect",
+    "question": "como o passport se integra com Connect/Express?",
+    "expectPaths": ["lib"],
+    "expectAbstain": false
+  },
+  {
+    "id": "impossible-redis-cache",
+    "question": "qual client Redis cacheia sessões de autenticação?",
+    "expectPaths": [],
+    "expectAbstain": true
+  },
+  {
+    "id": "unauthenticate",
+    "question": "como um usuário é deslogado / unauthenticate?",
+    "expectPaths": ["lib"],
+    "expectAbstain": false
+  },
+  {
+    "id": "clone-error-info",
+    "question": "há utilitário para clonar info de erro de autenticação?",
+    "expectPaths": ["lib"],
+    "expectAbstain": false
+  },
+  {
+    "id": "impossible-prisma",
+    "question": "onde fica o schema Prisma dos usuários?",
+    "expectPaths": [],
+    "expectAbstain": true
+  },
+  {
+    "id": "authenticate-options",
+    "question": "quais opções o middleware authenticate aceita?",
+    "expectPaths": ["lib/middleware/authenticate.js", "lib"],
+    "expectAbstain": false
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "repolens",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev:api": "pnpm --filter @repolens/api dev",
+    "dev:worker": "pnpm --filter @repolens/worker dev",
+    "dev:web": "pnpm --filter @repolens/web dev",
+    "test": "pnpm --filter @repolens/shared run build && pnpm -r run test",
+    "db:generate": "pnpm --filter @repolens/api db:generate",
+    "db:migrate": "pnpm --filter @repolens/api db:migrate"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,15 @@
+node_modules
+**/node_modules
+**/dist
+**/.next
+.git
+.env
+.env.local
+data
+coverage
+*.log
+.turbo
+.cursor
+.claude
+**/vitest.config.ts
+**/*.spec.ts
